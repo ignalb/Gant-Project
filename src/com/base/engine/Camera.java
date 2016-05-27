@@ -77,7 +77,7 @@ public class Camera {
 	boolean isLocked = false;
 	Vector2f center = new Vector2f(Window.getWidth()/2, Window.getHeight()/2);
 	public void input() {
-		float sensitivity = 0.5f;
+		float sensitivity = 0.25f;
 		float movement = (float)(10 * Time.getDelta());
 		if(Input.getKey(Keyboard.KEY_A))
 			move(getRight(), -movement);
@@ -105,7 +105,7 @@ public class Camera {
 			if(rotY)
 				rotateY(dPos.getX() * sensitivity);
 			if(rotX)
-				rotateX(dPos.getY() * sensitivity);
+				rotateX(-dPos.getY() * sensitivity);
 			
 			if(rotY || rotX)
 				Input.setMousePosition(center);
