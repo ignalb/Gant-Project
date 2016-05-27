@@ -66,11 +66,11 @@ public class Game {
 	float temp = 0;
 	
 	public void update(){
-		/*temp += Time.getDelta();
+		temp += Time.getDelta();
 		float sinTemp = (float)Math.sin(temp);
 		transform.setTranslation(sinTemp, 0, 5);
 		transform.setRotation(0, sinTemp * 180, 0);
-		transform.setScale(Math.abs(sinTemp), Math.abs(sinTemp), 1);*/
+		//transform.setScale(Math.abs(sinTemp), Math.abs(sinTemp), Math.abs(sinTemp));
 	}
 	
 	public void render(){
